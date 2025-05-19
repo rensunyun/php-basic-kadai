@@ -27,13 +27,18 @@
     // Step5: 昇順ソートを実行
     echo "昇順にソートします。<br>";
     sort_2way($nums, true);
-    print_r($nums);
-    echo "<br><br>";
+    foreach ($nums as $num) {
+      echo $num . "<br>";
+    }
+
+    echo "<br>";
 
     // 降順ソートを実行
     echo "降順にソートします。<br>";
     sort_2way($nums, false);
-    print_r($nums);
+    foreach ($nums as $num) {
+      echo $num . "<br>";
+    }
     ?>
   </p>
 </body>
